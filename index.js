@@ -31,3 +31,23 @@ function distanceTaveledInFeet(start, destination) {
 distanceTaveledInFeet(42, 45);
 
 //CALCULATE FARE PRICES.
+function calculatesFarePrice(start, destination)
+ {let num4= Math.abs(((destination - start)*264));
+    if (num4 <= 400) {
+        return 0;
+      } else 
+            if (num4 > 400 && num4 < 2000) {
+         amountPayable = ((num4 - 400) * 0.02);
+        return amountPayable;
+      } 
+      else 
+            if(num4>=2000 && num4<2500){
+        return 25;
+      }
+      else 
+            if (num4 > 2500) {
+        return 'cannot travel that far';
+      }
+    }
+    calculatesFarePrice(44, 47);
+    console.log(amountPayable);
